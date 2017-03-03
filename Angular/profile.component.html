@@ -1,0 +1,42 @@
+<!--
+Author: Han S. Lee
+3/2/2017
+
+This can be Modal or Routing.
+Displays the selected user information with image.
+
+1)Use Angualr FormModule.
+2)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+
+        }
+
+        div.user{
+            padding-top: 50px;
+        }
+        img.user{
+            
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+
+<!-- 
+Route the profile component, when user selects the certain user from the list.
+-->
+<body>
+    <div class="user">
+        <img class="user"  width="240" height="240" src="./profile1.jpg">
+        <h2 class="user">{{User.name}}</h2>
+        <h3 class="user">{{User.Age}}</h3>
+        <p class="user">Some Bio stuff</p>
+    </div>
+</body>
+</html>
