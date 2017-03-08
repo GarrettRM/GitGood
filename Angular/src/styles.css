@@ -1,8 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
 div.title h1.header {
   color: white;
   padding-top:20%;
-  padding-bottom: 3%;
-  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5%;
+  font-family: 'Raleway';
+  font-weight:bolder;
   font-size: 400%;
 
   text-align: center;
@@ -10,11 +13,12 @@ div.title h1.header {
 
 div.buttons{
   text-align: center;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 
-button.buttons{
-  font-family: Arial, Helvetica, sans-serif;
+a.buttons{
+
+  font-family: 'Raleway';
   background-color: rgb(255, 153, 69);
   border: none;
   color: white;
@@ -29,7 +33,7 @@ button.buttons{
   cursor: pointer;
 }
 
-button.buttons:hover{
+a.buttons:hover{
   background-color: white;
   color:  rgb(255, 153, 69);
 }
@@ -41,7 +45,9 @@ margin: -1px -1px -1px -1px;
 }
 
 table{
+
   background-color: white;
+
 }
 
 th{
@@ -58,6 +64,16 @@ th, td {
 }
 
 tr:hover{background-color:#f5f5f5}
+
+input{
+  font-size: 15px;
+}
+
+
+
+
+
+
 
 body{
   background-color: rgb(255, 153, 69);

@@ -7,14 +7,14 @@
     </div>
 
     <div class="buttons">
-      <button class="buttons" (click)="onClick()"> View Users</button>
-      <button class="buttons" > Update User</button>
-      <button class="buttons" > About</button>
+      <a class="buttons" href="#viewID" (click)="onClick()">{{show ? "Hide" : " View"}}</a>
+      <a class="buttons" href="#editID" (click)="onClick2()">{{show2 ? "Hide" : " Edit"}}</a>
+      <a class="buttons" > ABOUT</a>
     </div>
   </section>
 
   <section id="viewID">
-
+    <a name='viewID'></a>
     <table *ngIf="show" align="center" >
       <tr class="column">
         <th>ID</th>
@@ -47,4 +47,34 @@
     </table>
 
   </section>
+
+
+  <section id="editID">
+    <a name='editID'></a>
+    <table *ngIf="show2" align="center" >
+      <tr class="column">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+      <tr *ngFor="let post of posts; let i = index;">
+        <td>{{post.id}}</td>
+        <td><input style="border:none" ize="15" type="text" name="post.name" [(ngModel)]="post.name"/></td>
+        <td><input style="border:none" size="30" type="text" name="post.email" [(ngModel)]="post.email"/></td>
+        <td><input style="border:none" size="15" type="text" name="post.phone" [(ngModel)]="post.phone"/></td>
+        <td><input style="border:none" size="20" type="text" name="post.street" [(ngModel)]="post.street"/></td>
+        <td><input style="border:none" size="15" type="text" name="post.city" [(ngModel)]="post.city"/></td>
+        <td><input style="border:none" size="15" type="text" name="post.state" [(ngModel)]="post.state"/></td>
+        <td><input style="border:none" size="30" type="text" name="post.country" [(ngModel)]="post.country"/></td>
+        <button (click)="delRow(i)">X</button>
+      </tr>
+    </table>
+  </section>
+
+
 </body>
