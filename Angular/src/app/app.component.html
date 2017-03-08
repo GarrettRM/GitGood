@@ -1,0 +1,50 @@
+<body>
+  <section id="mainID">
+    <div class="title">
+      <h1 class="header">
+          Welcome {{name}}
+      </h1>
+    </div>
+
+    <div class="buttons">
+      <button class="buttons" (click)="onClick()"> View Users</button>
+      <button class="buttons" > Update User</button>
+      <button class="buttons" > About</button>
+    </div>
+  </section>
+
+  <section id="viewID">
+
+    <table *ngIf="show" align="center" >
+      <tr class="column">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+      <tr *ngFor="let post of posts">
+        <td>{{post.id}}</td>
+
+        <td>{{post.name}}</td>
+
+        <td>{{post.email}}</td>
+
+        <td>{{post.phone}}</td>
+
+        <td>{{post.street}}</td>
+
+        <td>{{post.city}}</td>
+
+        <td>{{post.state}}</td>
+
+        <td>{{post.country}}</td>
+
+      </tr>
+    </table>
+
+  </section>
+</body>
