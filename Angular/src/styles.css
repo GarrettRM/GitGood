@@ -2,13 +2,17 @@
 
 div.title h1.header {
   color: white;
-  padding-top:20%;
+  padding-top:15%;
   padding-bottom: 5%;
   font-family: 'Raleway';
   font-weight:bolder;
   font-size: 400%;
 
   text-align: center;
+}
+h2{
+  color: white;
+  font-family: 'Raleway';
 }
 
 div.buttons{
@@ -71,6 +75,50 @@ input{
 
 
 
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 153, 69);
+
+}
+
+li.navbar  {
+
+    float: right;
+}
+
+li.navbar  a {
+    font-weight: bold;
+    display: block;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+
+    text-decoration: none;
+}
+
+li.navbar  a:hover {
+    background-color: white;
+    color: rgb(255, 153, 69);
+}
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    color: black;
+    direction: ltr;
+    margin: 10px; // huh?
+    padding: 0;
+}
+
+
+html, body, div, canvas {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 

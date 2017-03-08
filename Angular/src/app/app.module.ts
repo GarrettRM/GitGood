@@ -5,19 +5,16 @@ import { Http, Response, Headers, RequestOptions, HttpModule } from '@angular/ht
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-import { RouterModule, Routes } from '@angular/router';
+import {routing} from './app.routing';
 
-
-
+import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about.component';
 import { AppComponent }  from './app.component';
 
-const routes: Routes = [
-
-];
 
 @NgModule({
-  imports: [ BrowserModule, FormsModule, HttpModule],
-  declarations: [ AppComponent],
+  imports: [ BrowserModule, FormsModule, HttpModule, routing],
+  declarations: [ AppComponent, AboutComponent, MainComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
