@@ -105,24 +105,76 @@ li.navbar  a:hover {
     background-color: white;
     color: rgb(255, 153, 69);
 }
-body {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 0 none;
-    color: black;
-    direction: ltr;
-    margin: 10px; // huh?
-    padding: 0;
+
+button.del{
+  display: none;
+}
+tr.rows:hover button.del{
+  display:inline;
+
 }
 
+
+.cancelbtn,.signupbtn {
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding-left: 33%;
+    padding-right:33%;
+
+}
+.clearfix{
+  margin-left: 33%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    padding-bottom: 10%;
+}
+input.create{
+    border-radius: 50px;
+
+    font-family: "Lucida" Grande, sans-serif;
+    width: 100%;
+    border-style: none;
+    border-color: white;
+    padding: 20px 20px;
+    margin: 8px 0;
+}
+label{
+  font-family: 'Raleway';
+  color:white;
+  font-size: 24px;
+}
+input.create:focus{
+  background-color: rgb(255, 227, 143);
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  color:white;
+
+}
 
 html, body, div, canvas {
     margin: 0px;
     padding: 0px;
 }
 
-
+div.about-container{
+  margin-left: 33%;
+}
 
 
 body{
   background-color: rgb(255, 153, 69);
+  padding: 0 2%
 }
