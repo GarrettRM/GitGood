@@ -1,5 +1,79 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Raleway|Open+Sans';
 
+
+/**
+LOGIN PANEL
+**/
+.bottom{
+  padding-bottom: 50px;
+}
+.loginpanel{
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  margin: 10% 25%;
+  box-shadow: 5px 10px 5px 3px #888888;
+}
+.txt{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#user, #pwd{
+
+  font-family: 'Raleway';
+  width:75%;
+  border-style: none;
+  border-color: white;
+  padding: 10px 0px;
+  margin: 8px 0;
+
+}
+#user,#pwd{
+  background-color: rgb(221, 221, 221);
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 22px;
+
+}
+h1.login{
+  background-color: rgb(0, 170, 244);
+  width:100%;
+  padding: 5% 0;
+  color:white;
+  font-family: 'Raleway';
+  font-weight:bolder;
+  font-size: 54px;
+}
+input.login{
+
+  font-family: 'Raleway';
+  background-color: rgb(0, 170, 244);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 150%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input.login:hover{
+  background-color:rgb(255, 153, 69);
+  color: white;
+}
+
+
+/**
+END LOGIN PANEL
+**/
+
+/**
+MAIN PAGE START
+**/
 div.title h1.header {
   color: white;
   padding-top:15%;
@@ -10,16 +84,34 @@ div.title h1.header {
 
   text-align: center;
 }
+
+section#viewID{
+  padding-top: 10%;
+}
+div.title-about, h1.header-about {
+  color: white;
+  padding-top:3%;
+  padding-bottom: 1%;
+  font-family: 'Raleway';
+  font-weight:bolder;
+  font-size: 200%;
+  text-align: center;
+}
 h2{
   color: white;
+  font-size: 150%;
   font-family: 'Raleway';
 }
 
 div.buttons{
   text-align: center;
   padding-bottom: 10%;
-}
 
+}
+th:active{
+
+  background-color:rgb(56, 82, 255);
+}
 a.buttons{
 
   font-family: 'Raleway';
@@ -31,16 +123,17 @@ a.buttons{
   text-decoration: none;
   display: inline-block;
   font-size: 150%;
-
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 a.buttons:hover{
-  background-color: white;
+  background-color:white;
   color:  rgb(255, 153, 69);
 }
+
+
 div.title{
 margin: -1px -1px -1px -1px;
 
@@ -164,17 +257,46 @@ input.create:focus{
 
 }
 
+
+
+
+
+
+
+
 html, body, div, canvas {
     margin: 0px;
     padding: 0px;
 }
 
-div.about-container{
-  margin-left: 33%;
+/**
+MAIN PAGE ENDS
+**/
+ul.members {
+  list-style: none;
+  text-align: left;
+  margin: 0 40% 0 43%;
+  color:white;
+  letter-spacing: 2px;
+  font-family:'Open Sans', sans-serif;
+
+}
+div.logo-buttons {
+
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
+div.about-container{
+  text-align: center;
+}
+a.logo-button{
+  padding-left: 5px;
+  padding-right:5px;
+}
 
 body{
   background-color: rgb(255, 153, 69);
+
   padding: 0 2%
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AppServices } from '../service/app.service';
 
 @Component({
-  moduleId: module.id,
+  moduleId: module.id.toString(),
   selector: 'login',
   templateUrl: 'login.component.html',
   providers: [AppServices]

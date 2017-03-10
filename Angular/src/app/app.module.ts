@@ -10,11 +10,12 @@ import {routing} from './app.routing';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about.component';
 import { AppComponent }  from './app.component';
+import { LoginComponent} from './login/login.component';
 
 
 @NgModule({
   imports: [ BrowserModule, FormsModule, HttpModule, routing],
-  declarations: [ AppComponent, AboutComponent, MainComponent],
+  declarations: [ AppComponent, AboutComponent, MainComponent, LoginComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

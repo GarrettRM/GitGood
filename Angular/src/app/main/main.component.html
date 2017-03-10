@@ -17,15 +17,16 @@
   <section id="viewID">
     <a name='viewID'></a>
     <table *ngIf="show" align="center" >
+      <input (keyup)="findItem(item.value)" name="item" type='text' #item />
       <tr class="column">
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Street</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Country</th>
+        <th>ID <img width=24px; src="../down.png" (click)="sortAsc('id')" /></th>
+        <th>name <img width=24px; src="../down.png" (click)="sortAsc('name')" /></th>
+        <th>Email </th>
+        <th>Phone </th>
+        <th>Street <img width=24px; src="../down.png" (click)="sortAsc('street')" /></th>
+        <th>City <img width=24px; src="../down.png" (click)="sortAsc('city')" /></th>
+        <th>State <img width=24px; src="../down.png" (click)="sortAsc('state')" /></th>
+        <th>Country <img width=24px; src="../down.png" (click)="sortAsc('country')" /></th>
       </tr>
       <tr *ngFor="let post of posts">
         <td>{{post.id}}</td>
@@ -103,7 +104,7 @@
 
         <div class="clearfix">
           <button (click)="addRow(name.value,email.value,phone.value,street.value,city.value, state.value, country.value);" type="submit" class="signupbtn">Sign Up</button>
-          <button (click)="onClick3()" type="button" class="cancelbtn">Cancel</button>
+          <button (click)="onClick3();alertUser()" type="button" class="cancelbtn">Cancel</button>
         </div>
       </div>
     </form>
